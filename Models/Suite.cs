@@ -14,5 +14,10 @@ namespace DesafioProjetoHospedagem.Models
         public string TipoSuite { get; set; }
         public int Capacidade { get; set; }
         public decimal ValorDiaria { get; set; }
+
+        public override string ToString()
+        {
+            return $"Tipo da Suite: {TipoSuite}, Capacidade Suite: {Capacidade}, Valor Diária {ValorDiaria}".ToString();
+        }
     }
 }
